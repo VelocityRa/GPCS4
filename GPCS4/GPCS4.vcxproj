@@ -35,6 +35,7 @@
     <ClInclude Include="Emulator\Emulator.h" />
     <ClInclude Include="Emulator\GameThread.h" />
     <ClInclude Include="Emulator\Linker.h" />
+    <ClInclude Include="Emulator\Module.h" />
     <ClInclude Include="Emulator\SceModuleSystem.h" />
     <ClInclude Include="Emulator\TLSHandler.h" />
     <ClInclude Include="GPCS4Common.h" />
@@ -144,6 +145,7 @@
     <ClInclude Include="Graphic\SpirV\SpirvModule.h" />
     <ClInclude Include="Loader\EbootObject.h" />
     <ClInclude Include="Loader\elf.h" />
+    <ClInclude Include="Loader\Module.h" />
     <ClInclude Include="Platform\PlatformUtils.h" />
     <ClInclude Include="Platform\UtilFile.h" />
     <ClInclude Include="Platform\UtilHardware.h" />
@@ -515,8 +517,8 @@
       <LanguageStandard>stdcpplatest</LanguageStandard>
       <BufferSecurityCheck>false</BufferSecurityCheck>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
-      <AdditionalIncludeDirectories>$(VULKAN_SDK)\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>GPCS4_DEBUG;__PTW32_STATIC_LIB;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(VULKAN_SDK)\Include;$(SolutionDir)GPCS4;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
@@ -551,7 +553,7 @@
       <LanguageStandard>stdcpplatest</LanguageStandard>
       <BufferSecurityCheck>false</BufferSecurityCheck>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
-      <AdditionalIncludeDirectories>$(VULKAN_SDK)\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(VULKAN_SDK)\Include;$(SolutionDir)GPCS4;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>__PTW32_STATIC_LIB;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>

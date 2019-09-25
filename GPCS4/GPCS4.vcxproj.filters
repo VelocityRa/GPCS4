@@ -783,6 +783,11 @@
     </ClInclude>
     <ClInclude Include="Graphic\Gnm\GnmGpuAddress.h">
       <Filter>Source Files\Graphic\Gnm</Filter>
+    <ClInclude Include="Loader\Module.h">
+      <Filter>Source Files\Loader</Filter>
+    </ClInclude>
+    <ClInclude Include="Emulator\Module.h">
+      <Filter>Source Files\Emulator</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
