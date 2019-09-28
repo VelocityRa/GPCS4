@@ -789,6 +789,12 @@
     <ClInclude Include="Emulator\Module.h">
       <Filter>Source Files\Emulator</Filter>
     </ClInclude>
+    <ClInclude Include="Loader\ELFMapper.h">
+      <Filter>Source Files\Loader</Filter>
+    </ClInclude>
+    <ClInclude Include="Loader\ModuleLoader.h">
+      <Filter>Source Files\Loader</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Loader\EbootObject.cpp">
@@ -1387,6 +1393,11 @@
     </ClCompile>
     <ClCompile Include="Graphic\Gve\GveDescriptor.cpp">
       <Filter>Source Files\Graphic\Gve</Filter>
+    <ClCompile Include="Loader\ELFMapper.cpp">
+      <Filter>Source Files\Loader</Filter>
+    </ClCompile>
+    <ClCompile Include="Loader\ModuleLoader.cpp">
+      <Filter>Source Files\Loader</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
