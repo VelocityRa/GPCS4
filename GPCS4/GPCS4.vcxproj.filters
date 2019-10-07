@@ -795,6 +795,15 @@
     <ClInclude Include="Loader\ModuleLoader.h">
       <Filter>Source Files\Loader</Filter>
     </ClInclude>
+    <ClInclude Include="Graphic\Pssl\GCNAnalyzer.h">
+      <Filter>Source Files\Graphic\Pssl</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphic\Pssl\GCNEnums.h">
+      <Filter>Source Files\Graphic\Pssl</Filter>
+    </ClInclude>
+    <ClInclude Include="Loader\FuncStub.h">
+      <Filter>Source Files\Loader</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Loader\EbootObject.cpp">
@@ -1401,6 +1410,12 @@
     </ClCompile>
     <ClCompile Include="Emulator\Module.cpp">
       <Filter>Source Files\Emulator</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphic\Pssl\GCNAnalyzer.cpp">
+      <Filter>Source Files\Graphic\Pssl</Filter>
+    </ClCompile>
+    <ClCompile Include="Loader\FuncStub.cpp">
+      <Filter>Source Files\Loader</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
