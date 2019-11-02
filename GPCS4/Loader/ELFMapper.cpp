@@ -250,7 +250,7 @@ bool ELFMapper::mapImageIntoMemroy()
 		m_moduleData->m_mappedMemory.reset(buffer);
 		m_moduleData->m_mappedSize = totalSize;
 
-		LOG_DEBUG("Module %s is loaded at 0x%08x size=%ld",
+		LOG_DEBUG("Module %s is loaded at 0x%p size=%ld",
 				  m_moduleData->fileName.c_str(), buffer, totalSize);
 
 		info.pMappedAddr = buffer;
@@ -261,7 +261,7 @@ bool ELFMapper::mapImageIntoMemroy()
 			if (phdr.p_flags & PF_X)
 			{
 				retVal = mapCodeSegment(phdr);
-				LOG_DEBUG("code segment at 0x%08x size=%ld", info.pCodeAddr,
+				LOG_DEBUG("code segment at 0x%p size=%ld", info.pCodeAddr,
 						  info.nCodeSize);
 			}
 			else if (phdr.p_type == PT_SCE_RELRO)
@@ -271,7 +271,7 @@ bool ELFMapper::mapImageIntoMemroy()
 			else if (phdr.p_flags & PF_W)
 			{
 				retVal = mapDataSegment(phdr);
-				LOG_DEBUG("data segment at 0x%08x size=%ld", info.pDataAddr,
+				LOG_DEBUG("data segment at 0x%p size=%ld", info.pDataAddr,
 						  info.nDataSize);
 				// there should no longer be segment to be mapped,
 				// and we stop enumerating right here.
