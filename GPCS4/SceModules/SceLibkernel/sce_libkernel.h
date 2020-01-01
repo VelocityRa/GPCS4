@@ -422,6 +422,9 @@ bool PS4API sceKernelGetSanitizerMallocReplaceExternal();
 bool PS4API sceKernelGetSanitizerNewReplaceExternal();
 
 
+int PS4API sceKernelGetCompiledSdkVersion(uint32_t *version);
+
+
 int PS4API scek___sys_regmgr_call(void);
 
 

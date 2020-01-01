@@ -175,6 +175,19 @@ bool PS4API sceKernelGetSanitizerNewReplaceExternal()
 }
 
 
+int PS4API sceKernelGetCompiledSdkVersion(uint32_t* version)
+{
+	if (!version)
+		return SCE_KERNEL_ERROR_EINVAL;
+
+	auto moduleSystem = CSceModuleSystem::GetInstance();
+	auto procParam = moduleSystem->getEbootModuleInfo()->pProcParam;
+	const int sdkVersion = (uint32_t)((uint64_t*)procParam)[3];
+
+	return sdkVersion;
+}
+
+
 int PS4API _sceKernelSetThreadDtors()
 {
 	LOG_FIXME("Not implemented");
